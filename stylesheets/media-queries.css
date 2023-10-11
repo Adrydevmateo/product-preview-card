@@ -1,0 +1,32 @@
+@media only screen and (min-width: 90em) {
+    .card {
+        width: 40%;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .card--body {
+        padding: 1rem 3rem 2rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .card--image {
+        border-top-left-radius: 0.8rem;
+        border-bottom-left-radius: 0.8rem;
+        border-top-right-radius: unset;
+    }
+}
+
+@media only screen and (min-width: 100em) {
+    .card {
+        width: 30%;
+    }
+}
+
+@media (hover: hover) {
+    .card--body .row-3 button:hover {
+        filter: brightness(80%);
+    }
+}
